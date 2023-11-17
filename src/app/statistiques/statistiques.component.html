@@ -1,0 +1,18 @@
+<img src="../../assets/images/download.png">
+<div class="container  col-md-6"> <br>
+    <form #t="ngForm" >
+      <fieldset>
+        <legend>What period you want to search for</legend>
+        <div class="mb-3">  
+              
+            <label for="date1" class="form-label"> date </label>
+            <input type="date"  class="form-control" id="date1" name="date1" required  ngModel>
+          </div>
+             
+          <button type="submit" class="btn btn-primary" (click)="getStat(t)" >send</button> 
+        </fieldset>
+    </form>
+  </div>
+    <div class="chart-container">
+      <canvas  id="MyChart" >{{ chart }}</canvas>
+  </div>

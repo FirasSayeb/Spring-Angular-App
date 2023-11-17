@@ -1,0 +1,25 @@
+
+<img src="../../assets/images/download.png">
+<div class="login-box"> <br>
+<form #f="ngForm" >
+  <fieldset>
+  <legend> Envoie Mail</legend>
+    <div class="user-box"> <input type="text"   id="destinatire" name="destinatire" required  ngModel> 
+        <label for="d" > destinataire </label>
+      </div>
+      
+      
+      <div class="user-box"><input type="text"  id="objet" name="objet"  required ngModel>
+        <label for="o" >objet </label>
+            
+          </div>  
+      <div class="user-box">  <textarea   id="message" name="message" required ngModel ><app-recherche [migrations]="migration"></app-recherche> </textarea>
+      <label for="message">message </label>
+      
+    </div>   <br>
+      <button type="submit" class="btn btn-primary" (click)="onsubmit(f)">send</button>
+      </fieldset> 
+</form>
+
+</div>
+

@@ -1,0 +1,28 @@
+ <div><img src="../../assets/images/download.png">
+ <h4>Application de Suivre et Modification de Migration d'Offre Chez un Operateur Orange</h4></div>
+ <div class="login-box">
+  
+    <form (ngSubmit)="Login()" >  
+      <fieldset>  <legend>User Login</legend>
+        <div class="user-box">
+        <input type="text" name="id" required=""  [(ngModel)]="user.id">
+        <label>UserId</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="Password" required="" [(ngModel)]="user.password">
+        <label>Password</label>
+      </div>
+        
+     
+         
+            
+           
+          <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+          <button type="submit" class="btn btn-primary" >Login</button>  </fieldset>
+    </form>
+</div>
+
+

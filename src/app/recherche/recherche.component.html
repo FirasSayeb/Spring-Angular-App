@@ -1,0 +1,19 @@
+
+<div class="login-box"><br>
+    <form #g="ngForm" > 
+     <fieldset>
+            <legend>Recherche Migration </legend> 
+            
+        <div class="user-box">  <input type="text"   id="MSISDN" name="MSISDN"   required    ngModel  >
+            <label for="MSISDN">Numero d'Appel</label>
+          </div> 
+         
+              
+          <button type="submit" class="btn btn-primary" (click)="Recherche(g)"> recherche</button> 
+        </fieldset>
+    </form>
+</div> <br><br> 
+<table class="table">
+  <tr><td>Numero d'Appel</td><td>Code Contrat</td><td>Offer Initial</td><td>Offer Target</td><td>Date D'execution</td></tr>
+  <tr><td>{{migrations.MSISDN}}</td><td>{{migrations.COCODE}}</td><td>{{migrations.OFFER_INIT_DES}}</td><td>{{migrations.OFFER_TARGET_DES}}</td><td>{{migrations.DUEDATE}}</td></tr>
+</table> 
